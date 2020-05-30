@@ -1,3 +1,4 @@
+# copy/paste this into a bash shell with the Azure CLI installed
 # list all locations
 az account list-locations --output table
 # list the locations that Azure Red Hat OpenShift can be deployed to
