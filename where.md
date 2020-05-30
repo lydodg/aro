@@ -1,0 +1,4 @@
+# list all locations
+az account list-locations --output table
+# list the locations that Azure Red Hat OpenShift can be deployed to
+az provider show -n Microsoft.RedHatOpenShift --query "resourceTypes[?resourceType == 'OpenShiftClusters']".locations --output json
