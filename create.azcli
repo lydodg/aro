@@ -2,7 +2,8 @@ LOCATION=eastus                 # the location of your cluster
 RESOURCEGROUP=aro-rg            # the name of the resource group where you want to create your cluster
 CLUSTER=cluster                 # the name of your cluster
 
-read -p "this is a copy/paste of the script of the main aro docs at https://aka.ms/openshift/docs, and uses the default azure subscription, eastus, and names your cluster 'cluster' with the resource group 'aro-rg', and assumes you are not using a red hat pull secret."
+# this is a copy/paste of the script of the main aro docs at https://aka.ms/openshift/docs, and uses the default azure subscription, eastus,
+# and names your cluster 'cluster' with the resource group 'aro-rg', and assumes you are not using a red hat pull secret.
 
 az provider register -n Microsoft.RedHatOpenShift --wait
 az provider register -n Microsoft.Compute --wait
